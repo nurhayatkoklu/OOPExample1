@@ -1,0 +1,187 @@
+ /*
+        Public String tipinde:
+        name,  password,        dateOfBirth, marriageStatus, relativeName, relativeAge, isTransferedSuceesfully
+        Public int tipinde:
+        accountNumber,    amountAccount1, accountNumber2, amountAccount2
+
+        Users değişkenleri oluştur
+
+       Constructor oluştur
+    Parametreleri  String name , passwod , dateOfBirth , marriageStatus
+    Int amountAccount1 , amountAccount2
+
+    değişken adı parametre adına eşit
+    parola, amountAccount1, amountAccount2 için de aynısı geçerli
+
+    ayrıca consructorda
+
+accountNumber değişkeni hesap numarasını   randomNumberCreater metodundan alacak
+     accountNumber2 değişkeni hesap numarasını  randomNumberCreader metodundan alacak
+     marriageStatus değişkeni  CheckMariageStatus metodunun return'üne eşit
+    dateOfBirth değişkeni checkAge return'una eşit
+
+
+    //--------------------------------------------------------------------------------------------------
+    /*
+         CheckMariageStatus adında metot oluştur
+        parametresi  String(marriageStatus)
+        return tipi String
+
+        String marriageStatus evli ise
+
+        Kullanıcıya şunu sor (use scanner class)
+        Do you want to add add your relative?
+
+        Kullanıcı Evet derse
+        Ask to user
+        What is your relative name?
+        Ask to user
+        Date of birth relative?
+
+        O zaman eşi ekleyin ( AddRelative sınıfını kullanın )
+        relativeName değişkeni  AddRelative snıfı  fullName'e eşit
+        relativeAge değişkeni AddRelative sınıf  age eşit
+
+            if relativeAge equal to "0"
+                then change the relativeName to "Relative should be more then 18 years old";
+                then change the relativeAge to "Relative should be more then 18 years old";
+                return the "Relative should be more then 18 years old";
+            if the relativeAge is not equal to "0"
+               return Transaction done successfully
+
+        If the user say No
+        then no need to add anything.
+     */
+
+
+    //--------------------------------------------------------------------------------------------------
+    /*
+       checkAge adında static metot oluştur
+       parameter is one String(myDOB)
+       return type is String
+
+       Compare today date to myDOB
+
+       if myDOB compare to today date is 18 then return "You can get a credit card"
+
+       if myDOB compare to today date is less then 18 "You should be at least 18 years old to get a credit card."
+
+       For example today date is 10/05/2020
+
+       if myDOB is 09/05/2002
+
+       return should be  "You can get a credit card"
+
+       if myDOB is 11/05/2002
+
+       return should be  "You should be at least 18 years old to get a credit card."
+
+        -- Parametresi String(myDOB) ve return  tipi String olan checkAge static methodunu oluşturun
+
+        -- taday date i myDOB ile karşılaştır
+
+        -- Eğer compare to today date 18 ise "You can get a credit card" et
+
+        -- Eğer compare to today date 18 den küçük ise "You should be at least 18 years old to get a credit card."
+        return et.
+
+        Örnek today date  10/05/2020 ise
+
+        Eğer myDOB  09/05/2002 ise
+
+        return   "You can get a credit card"  olmalı
+
+        Eğer   myDOB  11/05/2002  ise
+
+        return  "You should be at least 18 years old to get a credit card."  olmalı
+
+     */
+    //--------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+    //--------------------------------------------------------------------------------------------------
+    /*
+       randomNumberCreater metodunu oluştur, 8 haneli sayı üretsin ve acoountNumber1 ve 2'yi eşitle
+
+            it should be between 10000000 - 99999999
+
+       8 basamak sayı döndüren Random sayı oluştur
+
+           Bu sayı  10000000 - 99999999 arasında olamalı
+
+    */
+
+
+
+    /*
+        Create a method name is transfer
+        Parameters are two Users object
+        Return type is void
+
+        In this method
+            First ask to user "Do you want to transfer between your accounts or different user" (use scanner class)
+
+        if the answer is own
+            Call the method transferToOwnAccount in the Account class
+
+        if the answer different
+            Call the method transferOtherUser in the Account class
+
+     */
+
+
+    /*
+
+        -- Parametreleri iki tane Users object olan return tipi void olan transfer adında method oluştur.
+
+
+        -- Bu method içinden
+           Önce kullanıcıya sor  "Do you want to transfer between your accounts or different user" ( scanner class kullan)
+
+      - Eğer cevap own ise
+            Account class içinde transferToOwnAccount methodunu çağır
+
+      - Eğer cevap farklı ise
+           Account class içinde transferOtherUser methodunu çağır
+
+
+     */
+//--------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+//--------------------------------------------------------------------------------------------------
+    /*
+        Print the object using toString method
+
+        like
+         return "\nname: " + name +
+                "\npassword: " + password+
+                "\ndateOfBirth: " + dateOfBirth+
+                ......
+
+     */
+
+
+    /*
+
+       toString methodunu kullanarak objecti print et
+
+
+        return "\nname: " + name +
+               "\npassword: " + password+
+               "\ndateOfBirth: " + dateOfBirth+
+               ......
+
+
+               gibi
+
+    */
+    //--------------------------------------------------------------------------------------------------
