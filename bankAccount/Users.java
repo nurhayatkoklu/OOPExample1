@@ -30,27 +30,21 @@ public class Users {
         this.accountNumber2 = randomNumberCreater();
     }
 
-    /*public Users(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
-     */
 
     public String CheckMariageStatus (String marriageStatus) {
         Scanner sc=new Scanner(System.in);
         String don="";
         if (marriageStatus.equalsIgnoreCase("Married")) {
-            System.out.print("Do you want to add add your relative? (Yes/No)");
+            System.out.print("Do you want to add add your relative? (Yes/No): ");
             String answer= sc.nextLine();
             if (answer.equalsIgnoreCase("Yes")) {
 
                 System.out.print("What is your relative name? : ");
                 String name= sc.nextLine();
-                //partner.fullName=relativeName;
 
                 System.out.print("What is the date of birth of your relative?: ");
                 String birth= sc.nextLine();
-               // partner.age=relativeAge;
+
                 AddRelative partner=new AddRelative(name, birth);
                 this.relativeName=name;
                 this.relativeAge=checkAge(birth);
@@ -86,49 +80,6 @@ public class Users {
 
             return  "You should be at least 18 years old to get a credit card.";
 
-      /*  LocalDate date = LocalDate.now();
-        DateTimeFormatter formatters = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        String text = date.format(formatters);
-        LocalDate today = LocalDate.parse(text, formatters);
-
-        LocalDate myAge = LocalDate.parse(age, formatters);
-
-        int num = today.compareTo(LocalDate.parse(age, formatters));
-
-        String result ="";
-
-        if(num>18){
-
-            result = "You can get a credit card";
-
-        }else if(num < 18){
-
-            result = "You should be at least 18 years old to get a credit card.";
-
-        } else if(num==18){
-
-            if( today.getMonthValue()>myAge.getMonthValue()){
-
-                result = "You can get a credit card";
-
-            }else if(today.getMonthValue()<myAge.getMonthValue()){
-
-                result = "You should be at least 18 years old to get a credit card.";
-
-            }else if(today.getMonthValue()==myAge.getMonthValue()){
-
-                if(today.getDayOfMonth()>myAge.getDayOfMonth()){
-
-                    result = "You can get a credit card";
-
-                }else {
-
-                    result =  "You should be at least 18 years old to get a credit card.";
-                }
-            }
-        }
-
-        return result; */
 
     }
     public static int randomNumberCreater () {
